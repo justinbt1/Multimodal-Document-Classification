@@ -1,0 +1,10 @@
+{
+  "Dialect": "mysql",
+  "Driver": "pymysql",
+  "Username": "",
+  "Password": "",
+  "Host": "",
+  "Port": "",
+  "Database": "",
+  "Table": ""
+}
