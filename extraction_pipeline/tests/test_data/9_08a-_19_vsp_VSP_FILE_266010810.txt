@@ -1,0 +1,108 @@
+Verification listing of '/data/support/A752TK/vsp/segy/Surface_Hydrophone_Raw_Shots_095.segy'
+---------------------------------------------------------------------------------------------
+File 1 :
+--------
+
+EBCDIC Header - 3200 bytes: 
+----------------------------
+
+C 1 CLIENT NAME:            BHP Billiton         SURVEY DATE: 19-July-2002      
+C 2 FIELD NAME:             Keith                                               
+C 3 WELL NAME:              9/8a-K02                                            
+C 4 CONTRACTOR NAME:        SLB                                                 
+C 5 VSP SURVEY TYPE:        Vertical Incidence VSP       Run: 1                 
+C 6 Hydrophone Depth/Offset/Azimuth: 30ft MSL / 0ft / Variable deg              
+C 7 Source Depth/Offset/Azimuth:     15ft MSL / 0ft / Variable deg              
+C 8 TAPE FORMAT:            Seg-Y                                               
+C 9 PERMANENT DATUM:        MSL                                                 
+C10 KB ELEVATION ABOVE MSL: 83ft above MSL                                      
+C11 Ground Level:           402ft below MSL                                     
+C12 DOWNHOLE SENSOR TYPE: Dual CSI with Gac (ACCELROMETER)                      
+C13                                                                             
+C14 DESCRIPTION OF FILES, PROCESSING, FILE CONTENT:-                            
+C15 S1 Surface Hydrophone Raw Shots                                             
+C16 File 095 (RIH log)                                                          
+C17                                                                             
+C18                                                                             
+C19                                                                             
+C20                                                                             
+C21                                                                             
+C22                                                                             
+C23                                                                             
+C24                                                                             
+C25                                                                             
+C26                                                                             
+C27                                                                             
+C28                                                                             
+C29                                                                             
+C30                                                                             
+C31                                                                             
+C32                                                                             
+C33                                                                             
+C34                                                                             
+C35                                                                             
+C36                                                                             
+C37                                                                             
+C38                                                                             
+C39                                                                             
+C40 END EBCDIC                                                                  
+
+
+
+
+
+BINARY Header - 400 bytes: 
+---------------------------
+JOBID                                    :   1 -   4 : 0
+LINEID                                   :   5 -   8 : -999
+FILE_NO                                  :   9 -  12 : 2
+NBR_DATA_TRACE                           :  13 -  14 : 1
+SAMPLE_INT                               :  17 -  18 : [ us ] 1000
+NSAMPLES                                 :  21 -  22 : 501
+DATA_CODE                                :  25 -  26 : 1
+MEASUREMENT_SYSTEM                       :  55 -  56 : 1
+
+
+
+
+TRACE HEADER - 240 bytes:
+--------------------------
+TRC_LINE                                 :   1 -   4 : 
+ACQ_SHOT                                 :   9 -  12 : 
+CABLE_LEN / 1000                         :  41 -  44 : [ m ] 
+SOURCE_X * 1                             :  73 -  76 : [ m ] 
+SOURCE_Y * 1                             :  77 -  80 : [ m ] 
+TRANS_TIME                               : 107 - 108 : [ ms ] 
+TOFD                                     : 109 - 110 : [ ms ] 
+NSAMPLES                                 : 115 - 116 : 
+
+
+
+TRC_LINE    ACQ_SHOT    CABLE_LEN   SOURCE_X    SOURCE_Y    TRANS_TIME  TOFD        NSAMPLES    
+0           22          1514.9      419081.0    6616035.0   96          0           501         
+1           23          1514.9      419075.0    6616033.5   83          0           501         
+2           24          1514.9      0.0         0.0         27          0           501         
+3           25          1514.9      419071.0    6616035.5   84          0           501         
+4           26          1514.9      419072.0    6616037.0   83          0           501         
+5           27          1514.9      419073.0    6616037.0   83          0           501         
+6           28          1514.9      419073.0    6616037.0   84          0           501         
+7           16          1545.4      419082.0    6616045.0   83          0           501         
+8           17          1545.4      419081.0    6616042.0   83          0           501         
+9           18          1545.4      419081.0    6616040.0   84          0           501         
+10          19          1545.4      419079.0    6616040.0   84          0           501         
+11          20          1545.4      419077.0    6616040.0   83          0           501         
+12          21          1545.4      419075.0    6616041.0   84          0           501         
+13          11          1575.8      419080.0    6616046.0   84          0           501         
+14          12          1575.8      419082.0    6616046.0   84          0           501         
+15          13          1575.8      419083.0    6616045.0   82          0           501         
+16          14          1575.8      419082.0    6616043.0   83          0           501         
+17          15          1575.8      419082.0    6616041.0   84          0           501         
+18          2           1606.3      419089.0    6616046.5   82          0           501         
+19          3           1606.3      419086.0    6616053.0   84          0           501         
+20          4           1606.3      419087.0    6616048.0   83          0           501         
+21          5           1606.3      419086.0    6616056.5   84          0           501         
+22          6           1606.3      419087.0    6616057.0   84          0           501         
+23          7           1606.3      419088.0    6616055.0   95          0           501         
+24          8           1606.3      419089.0    6616052.0   85          0           501         
+25          9           1606.3      419089.0    6616049.0   84          0           501         
+26          10          1606.3      419088.0    6616046.5   84          0           501         
