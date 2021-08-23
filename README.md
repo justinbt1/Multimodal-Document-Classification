@@ -14,7 +14,7 @@ details.
 ### Abstract
 This project proposes using a multi-modal approach to document classification, combining both text and visual 
 modalities to create a more robust classifier for oil and gas exploration and production documents. Given heavy 
-dependence on multi-modal communication of information and high crossmodal intra-class variability within these 
+dependence on multi-modal communication of information and high cross-modal intra-class variability within these 
 documents, it is possible to hypothesize that a multi-modal classification approach combining text and visual feature 
 input streams, will outperform a classifier trained on features from a single modality such as text or visual features. 
 To investigate this we will build on previous related work on multi-modal classification in other domains, applying and 
@@ -41,7 +41,7 @@ The SQL script used to create the table used in this project can be found
 
 #### Machine Learning
 For optimal performance it is recommended to use GPU accelerated computing by setting up TensorFlow GPU support and 
-installing the required Nvidea CUDA dependencies as described in the [install instructions](https://www.tensorflow.org/install/gpu).
+installing the required Nvidia CUDA dependencies as described in the [install instructions](https://www.tensorflow.org/install/gpu).
 
 ### Data
 The data used in this project was compiled from raw documents uploaded by oil companies to the 

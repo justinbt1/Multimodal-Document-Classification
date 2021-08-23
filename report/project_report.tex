@@ -173,7 +173,7 @@ The stochastic nature of training a deep learning model also needs to be account
 
 To measure how well the model generalises across the entire NDR dataset instead of simply optimising the model to predict a specific test sample, it is necessary to also vary the sub-samples used in training, validating and testing the model. Therefore a different random sample split is used for each iteration and to ensure the same sub-samples are used for each model a random seed $s$ for $s \in \{2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029\}$ is used in sequence to calculate each iterations split values. When an average performance metric such as average accuracy is mentioned in this work, it can be assumed the metric has been calculated using this technique.\\
 
-All models in this paper were built using the TensorFlow 2.3 framework in Python 3.7 and trained using GPU accelerated computing using CUDA 10.1 with an Nvidea RTX 2070 SUPER GPU.
+All models in this paper were built using the TensorFlow 2.3 framework in Python 3.7 and trained using GPU accelerated computing using CUDA 10.1 with an Nvidia RTX 2070 SUPER GPU.
 
 \section{Baseline Models}
 
