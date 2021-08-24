@@ -49,7 +49,7 @@ libraries. To make the feature extraction process efficient, the native Python m
 parallelise the workload into separate processes distributing extraction across multiple CPU cores. The below diagram 
 shows the flow for a single process for extracting text and image features from a document:
 
-![License: MIT](media/Extraction Flow.jpg)
+![License: MIT](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/media/Extraction%20Flow.jpg)
 
 #### Pipeline Requirements
 The data pipeline is dependent on a number of external C, C++ and Java libraries:
