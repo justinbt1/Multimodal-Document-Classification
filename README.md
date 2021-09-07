@@ -9,7 +9,7 @@ classification of documents within the [Oil & Gas Authority](https://www.ogautho
 convolutional long short term memory (C-LSTM) neural networks. This readme gives a brief overview of the project and the code in 
 this repository, see the accompanying 
 [report](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/report/project_report.pdf) for the full 
-details.
+details. Note this is experimental code for my masters project, I would advise against running any of it in production.
 
 ### Requirements
 All Python dependencies for the project can be installed by building a conda environment from the 
