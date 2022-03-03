@@ -242,21 +242,57 @@ documents also did not contain any text content and therefore lack a
 text feature set. A breakdown of the features available for each
 document class is provided in Table 1.
 
-::: {#tab:table-name}
-  -------------------- -------------------- ------------------- --------------
-                          **Extracted**        **Extracted**      **Either**
-   **Document Class**   **Image Features**   **Text Features**   **Features**
-       geol_geow               1609                1477              1609
-        geol_sed               1013                 964              1013
-       gphys_gen               1041                 876              1041
-        log_sum                1051                 887              1051
-        pre_site               1154                1053              1154
-        vsp_file               673                  621              673
-       **Total:**            **6541**            **5878**          **6541**
-  -------------------- -------------------- ------------------- --------------
-
-  : Count of Feature Sets Extracted per Document.
-:::
+<table>
+  <tr>
+    <td><b>Document Class</b></td>
+    <td><b>Extracted Image Features</b></td>
+    <td><b>Extracted Text Features</b></td>
+    <td><b>Either Features</b></td>
+  </tr>
+  <tr>
+    <td>geol_geow</td>
+    <td>1609</td>
+    <td>1477</td>
+    <td>1609</td>
+  </tr>
+  <tr>
+    <td>geol_sed</td>
+    <td>1013</td>
+    <td>964</td>
+    <td>1013</td>
+  </tr>
+  <tr>
+    <td>gphys_gen</td>
+    <td>1041</td>
+    <td>876</td>
+    <td>1041</td>
+  </tr>
+  <tr>
+    <td>log_sum</td>
+    <td>1051</td>
+    <td>887</td>
+    <td>1051</td>
+  </tr>
+  <tr>
+    <td>pre_site</td>
+    <td>1154</td>
+    <td>1053</td>
+    <td>1154</td>
+  </tr>
+  <tr>
+    <td>vsp_file</td>
+    <td>673</td>
+    <td>621</td>
+    <td>673</td>
+  </tr>
+   <tr>
+    <td><b>Total:</b></td>
+    <td>6541</td>
+    <td>5878</td>
+    <td>6541</td>
+  </tr>
+</table>
+Table 1: Count of Feature Sets Extracted per Document.
 
 ## Text Pre-Processing
 
@@ -490,24 +526,57 @@ discussed above. When trained with the original hyperparameters the
 model converged after an average of 23 epochs, the trained model had an
 average accuracy of 82.6%, average recall score of 0.83, average
 precision score of 0.83 and an average macro f1 score of 0.83 when
-evaluated against the test dataset.\
+evaluated against the test dataset.
 
-::: {#tab:table-name}
-  --------------------- ---------------------- ----------------------
-                                               
-   **Hyperparameter**     **Original Model**      **Tunned Model**
-       Kernel Size                4                      7
-      Feature Maps               100                    200
-   Activation Function           ReLU                   ReLU
-         Pooling         Global 1-Max Pooling   Global 1-Max Pooling
-      Dropout Rate               0.5                    0.3
-   $l2$ Regularisation            3                     0.5
-   Dense Hidden Layers            0                      1
-    Dense Layer Nodes             0                      50
-  --------------------- ---------------------- ----------------------
+<table>
+  <tr>
+    <td><b>Hyperparameter</b></td>
+    <td><b>Original Model</b></td>
+    <td><b>Tunned Model</b></td>
+  </tr>
+  <tr>
+    <td>Kernel Size</td>
+    <td>4</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Feature Maps</td>
+    <td>100</td>
+    <td>200</td>
+  </tr>
+  <tr>
+    <td>Activation Function</td>
+    <td>ReLU</td>
+    <td>ReLU</td>
+  </tr>
+  <tr>
+    <td>Pooling</td>
+    <td>Global 1-Max Pooling</td>
+    <td>Global 1-Max Pooling</td>
+  </tr>
+  <tr>
+    <td>Dropout Rate</td>
+    <td>0.5</td>
+    <td>0.3</td>
+  </tr>
+  <tr>
+    <td>$l2$ Regularisation</td>
+    <td>3</td>
+    <td>0.5</td>
+  </tr>
+  <tr>
+    <td>Dense Hidden Layers</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Dense Layer Nodes</td>
+    <td>0</td>
+    <td>50</td>
+  </tr>
+</table>
 
-  : Hyperparameters of Original (Zhang, 2017) and Tunned Model.
-:::
+Table 2: Hyperparameters of Original (Zhang, 2017) and Tunned Model.  
 
 The model was then optimised for the task of classifying documents in
 the NDR corpus through hyperparameter tuning. A coarse grid search was
@@ -523,18 +592,14 @@ which hyperparameters are most important to tune to improve the
 performance of the original sentence classification model (Zhang, 2017).
 During the grid search procedure each hyperparameter is tunned
 separately and all other parameters, weights and biases are kept
-constant, the highest performing value is selected for the final model.\
+constant, the highest performing value is selected for the final model.
 
-::: {#tab:table-name}
-  ---------------------- ------------------------------------- -- --
-            Kernel Sizes $= \ \{1, 3, 5, 7, 10\}$                 
-            Feature Maps =  $\{10, 50, 100, 200, 400, 600\}$      
-            Dropout Rate =  $\{0.1, 0.2, 0.3, 0.4, 0.5\}$         
-    $l2$ Norm Constraint =  $\{0.5, 1, 2, 3\}$                    
-  ---------------------- ------------------------------------- -- --
+            Kernel Sizes = {1, 3, 5, 7, 10}               
+            Feature Maps = {10, 50, 100, 200, 400, 600}   
+            Dropout Rate = {0.1, 0.2, 0.3, 0.4, 0.5}       
+            l2 Norm Constraint = {0.5, 1, 2, 3}                   
 
-  : Hyperparameter Ranges (Zhang, 2017).
-:::
+Table 3: Hyperparameter Ranges (Zhang, 2017).  
 
 We also experimented with adding dense feed forward layers prior to the
 dropout and softmax output layers, finding that the addition of a single
@@ -656,6 +721,59 @@ uni-directional LSTM layers was also evaluated but did not improve the
 average performance of the model. An overview of average performance
 metrics for each page image classification model has been provided in
 Table 4.
+
+<table>
+  <tr>
+    <td>Model Architecture</td>
+    <td>Average Accuracy</td>
+    <td>Average Precision</td>
+    <td>Average Recall</td>
+    <td>Average F1 Score</td>
+    <td>Average Epochs</td>
+  </tr>
+  <tr>
+    <td>Single Page CNN (First Page)</td>
+    <td>67.1</td>
+    <td>0.69</td>
+    <td>0.68</td>
+    <td>0.68</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>Multi-Page CNN (Majority Vote)</td>
+    <td>44.8</td>
+    <td>0.59</td>
+    <td>0.42</td>
+    <td>0.40</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Multi-Page CNN (NN)</td>
+    <td>72.4</td>
+    <td>0.75</td>
+    <td>0.73</td>
+    <td>0.73</td>
+    <td>3 + 7</td>
+  </tr>
+  <tr>
+    <td>Uni-Directional C-LSTM</td>
+    <td>71.3</td>
+    <td>0.74</td>
+    <td>0.72</td>
+    <td>0.72</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Bi-Directional C-LSTM</td>
+    <td>70.3</td>
+    <td>0.73</td>
+    <td>0.71</td>
+    <td>0.71</td>
+    <td>6</td>
+  </tr>
+</table>
+
+Table 4: Uni-Modal Page Image Classifier Performance.  
 
 # Multi-Modal Models
 
