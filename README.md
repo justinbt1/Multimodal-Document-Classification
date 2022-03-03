@@ -13,7 +13,7 @@ details. Note this is experimental code for my masters project, I would advise a
 
 ### Requirements
 All Python dependencies for the project can be installed by building a conda environment from the 
-[environments.yml](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/environment.yml) file. 
+[environment.yml](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/environment.yml) file. 
 
 ### Document Dataset
 The data source used in this project was compiled from a corpus of raw documents uploaded by oil companies to the 
