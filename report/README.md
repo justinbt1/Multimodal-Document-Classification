@@ -447,11 +447,7 @@ placing equal importance on both. In the context of the NDR document
 classification task a good balance is ideal, therefore $F1$,
 $precision_m$ and $recall_m$ scores of near one are desirable.
 
-::: center
-$precision_m = \dfrac{\sum_{i=1}^{c}TP_i\  /\ (TP_i + FP_i)}{6}$\
-$recall_m = \dfrac{\sum_{i=1}^{c}TP_i\   /\   (TP_i + FN_i)}{6}$\
-$F1_m = \dfrac{2 \times precision_m \times recall_m}{precision_m + recall_m}$\
-:::
+![Performance Metrics](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/media/performance_metrics.jpg)
 
 The stochastic nature of training a deep learning model also needs to be
 accounted for in the model evaluation process. A model with a set
