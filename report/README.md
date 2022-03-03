@@ -722,7 +722,7 @@ however this layers addition was found to degrade the models
 performance. The final high level architecture for the early fusion
 model is shown in Figure 2.
 
-![Early Fusion Model Architecture](early_fusion_model.png)
+![Early Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/early_fusion_model.png)
 
 ## Late Fusion Model
 
@@ -752,7 +752,7 @@ regularisation and other hyperparameters as the original models. The
 final high level architecture for the late fusion model is shown in
 Figure 3.
 
-![Late Fusion Model Architecture](late_fusion_model.png)
+![Late Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/late_fusion_model.png)
 
 ## Hybrid Fusion Model
 
@@ -765,7 +765,7 @@ layers into a single representation connected to a softmax output layer.
 The final high level architecture for the hybrid fusion model is shown
 in Figure 4.
 
-![Hybrid Fusion Model Architecture](hybrid_fusion_model.png)
+![Hybrid Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/hybrid_fusion_model.png)
 
 # Evaluation
 
