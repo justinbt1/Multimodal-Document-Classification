@@ -77,7 +77,7 @@ the majority of the information, examples of exploration documents that
 primarily communicate information visually include sample images, maps,
 technical diagrams, seismic sections and wireline logs.
 
-![Sample NDR Page Images](page_samples.png)
+![Sample NDR Page Images](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/page_samples.png)
 
 Contemporary uni-modal document classification models used in the
 industry often rely on features from a single modality, either textual
