@@ -1005,30 +1005,79 @@ breakdown how each model architecture performed on each dataset and
 evaluate their performance metrics and robustness to single image only
 modality classification.
 
-::: tabular
-\| c \| c c c c \| **Model** &\
-**Architecture** & **Accuracy** & **Precision** & **Recall** & **F1
-Score**\
-\
-Text &&&&\
-1D-CNN & **86.3 %** & **0.86** & **0.86** & **0.86**\
-Early Fusion&&&&\
-C-LSTM & 82.5 % & 0.84 & 0.83 & 0.83\
-Late Fusion &&&&\
-C-LSTM & 84.2 % & 0.85 & 0.85 & 0.85\
-Hybrid Fusion &&&&\
-C-LSTM & 82.3 % & 0.84 & 0.83 & 0.83\
+<table>
+  <tr>
+    <td><b>Model Architecture</b></td>
+    <td><b>Accuracy</b></td>
+    <td><b>Precision</b></td>
+    <td><b>Recall</b></td>
+    <td><b>F1 Score</b></td>
+  </tr>
+  <tr>
+    <td colspan=5><b>Dual Modality Dataset</b></td>
+  </tr>
+  <tr>
+    <td>Text 1D-CNN</td>
+    <td><b>86.3 %</b></td>
+    <td><b>0.86</b></td>
+    <td><b>0.86</b></td>
+    <td><b>0.86</b></td>
+  </tr>
+  <tr>
+    <td>Early Fusion C-LSTM</td>
+    <td>82.5 %</td>
+    <td>0.84</td>
+    <td>0.83</td>
+    <td>0.83</td>
+  </tr>
+  <tr>
+    <td>Late Fusion C-LSTM</td>
+    <td>84.2 %</td>
+    <td>0.85</td>
+    <td>0.85</td>
+    <td>0.85</td>
+  </tr>
+  <tr>
+    <td>Hybrid Fusion C-LSTM</td>
+    <td>82.3 %</td>
+    <td>0.84</td>
+    <td>0.83</td>
+    <td>0.83</td>
+  </tr>
+  <tr>
+    <td colspan=5><b>Complete Dataset</b></td>
+  </tr>
+  <tr>
+    <td>Multi-Page CNN (NN)</td>
+    <td>72.4 %</td>
+    <td>0.75</td>
+    <td>0.73</td>
+    <td>0.73</td>
+  </tr>
+  <tr>
+    <td>Early Fusion C-LSTM</td>
+    <td>77.3 %</td>
+    <td>0.80</td>
+    <td>0.78</td>
+    <td>0.78</td>
+  </tr>
+  <tr>
+    <td>Late Fusion C-LSTM</td>
+    <td><b>81.1 %</b></td>
+    <td><b>0.82</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.81</b></td>
+  </tr>
+  <tr>
+    <td>Hybrid Fusion C-LSTM</td>
+    <td>77.2 %</td>
+    <td>0.81</td>
+    <td>0.77</td>
+    <td>0.78</td>
+  </tr>
+</table>
 
-\
-Multi-Page &&&&\
-CNN (NN) & 72.4 %&0.75 & 0.73 & 0.73\
-Early Fusion&&&&\
-C-LSTM & 77.3 % & 0.80 & 0.78 & 0.78\
-Late Fusion &&&&\
-C-LSTM & **81.1 %**& **0.82** & **0.81** & **0.81**\
-Hybrid Fusion &&&&\
-C-LSTM & 77.2 % & 0.81 & 0.77 & 0.78\
-:::
+Table 7: Multi-Modal Classifier Performance Benchmarks.
 
 For the Dual Modality Dataset the tunned uni-modal one dimensional CNN
 text classification model was the strongest performing classifier, this
