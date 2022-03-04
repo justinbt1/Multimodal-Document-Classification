@@ -296,7 +296,7 @@ Table 1: Count of Feature Sets Extracted per Document.
 
 ## Text Pre-Processing
 
-The text feature dataset consists of a vector of integers $T$ for each
+The text feature dataset consists of a vector of integers *T* for each
 document representing the first 2,000 informative terms following text
 extraction and pre-processing. To create each vector, each document's
 text first had to be extracted. Text extraction from ascii format files
@@ -319,19 +319,19 @@ reduces dimensionality while preserving the semantic meaning of each
 token term.
 
 The processed tokens were then converted to integers, this was achieved
-by creating a vocabulary set $V$ containing all unique tokens extracted
-from each document and mapping each to a unique integer value $v$. The
+by creating a vocabulary set *V* containing all unique tokens extracted
+from each document and mapping each to a unique integer value *v*. The
 first 2,000 processed tokens for each document are then mapped to their
-corresponding $v$ integer value in $V$ to create a vector of integers
-$T$ for each document. Any vectors with less than 2,000 integers are
-padded with 0 so that $|T| = 2,000$ giving a consistent input size for
+corresponding *v* integer value in *V* to create a vector of integers
+*T* for each document. Any vectors with less than 2,000 integers are
+padded with 0 so that *|T| = 2,000* giving a consistent input size for
 our models.
 
 
 ## Image Pre-Processing
 
 The visual feature dataset consists of sequences of JPEG images, with
-each sequence $S$ representing the first ten pages of each document in
+each sequence *S* representing the first ten pages of each document in
 the corpus. For documents in a non-image file format the pages were
 converted to image representations. For PDF format documents each page
 was converted to a single JPEG image using the Poppler PDF rendering
@@ -340,7 +340,7 @@ pixels was created using a standard A4 page size of 1748 x 2480 pixels
 and the documents text content was fitted to and overlayed on each blank
 page image. For documents with less than ten pages, each sequence was
 then padded with blank 2D arrays with all pixel values in each array set
-to zero so $|S| = 10$.
+to zero so *|S| = 10*.
 
 Each extracted page image was then resized to 200 x 200 pixels using
 cubic interpolation to make them small enough to be fed into the
@@ -427,25 +427,25 @@ number of epochs each model takes to converge.
 
 The first step in evaluating each model is the conversion of the class
 probability predictions provided by the softmax output layer into
-discrete classification predictions using an $argmax$ function. The
+discrete classification predictions using an *argmax* function. The
 models accuracy can then be calculated by dividing the count of
 correctly predicted classes by the count of all predictions, giving a
 measure of the models overall predictive performance.
 
-The precision, recall and $F1$ performance scores are calculated using
+The precision, recall and *F1* performance scores are calculated using
 macro-averaging, as this treats all classes equally and performs well
 across balanced datasets (Sokolova, 2009). Macro precision
-($precision_m$) is calculated as the ratio of documents correctly
-predicted ($TP$) in a class ($c$) to all documents predicted to be in
-that class ($TP + FP$) averaged over all classes. Whereas macro recall
-($recall_m$) is the ratio between documents correctly predicted ($TP$)
-to be in a class ($c$) to all documents incorrectly predicted to belong
-to another class ($FN$), averaged over all classes. The macro $F1$ score
-is calculated as the harmonic mean of the $precision_m$ and $recall_m$
+(*precision_m*) is calculated as the ratio of documents correctly
+predicted (*TP*) in a class (*c*) to all documents predicted to be in
+that class (*TP + FP*) averaged over all classes. Whereas macro recall
+(*recall_m*) is the ratio between documents correctly predicted (*TP*)
+to be in a class (*c*) to all documents incorrectly predicted to belong
+to another class (*FN*), averaged over all classes. The macro *F1* score
+is calculated as the harmonic mean of the *precision_m* and *recall_m*
 scores, this gives a measure of the balance between precision and recall
 placing equal importance on both. In the context of the NDR document
-classification task a good balance is ideal, therefore $F1$,
-$precision_m$ and $recall_m$ scores of near one are desirable.
+classification task a good balance is ideal, therefore *F1*,
+*precision_m* and *recall_m* scores of near one are desirable.
 
 ![Performance Metrics](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/media/performance_metrics.jpg)
 
@@ -464,8 +464,8 @@ instead of simply optimising the model to predict a specific test
 sample, it is necessary to also vary the sub-samples used in training,
 validating and testing the model. Therefore a different random sample
 split is used for each iteration and to ensure the same sub-samples are
-used for each model a random seed $s$ for
-$s \in \{2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029\}$
+used for each model a random seed *s* for
+*s* є {2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029}
 is used in sequence to calculate each iterations split values. When an
 average performance metric such as average accuracy is mentioned in this
 work, it can be assumed the metric has been calculated using this
@@ -485,7 +485,7 @@ simple 1D CNN model for text classification first proposed by Kim (Kim,
 convolutional layer, followed by a global max pooling layer and a fully
 connected softmax output layer. To avoid overfitting or co-adaptation of
 hidden units, dropout is employed in the penultimate network layer,
-reportedly improving the performance by up to 4% (Kim, 2014). An $l2$
+reportedly improving the performance by up to 4% (Kim, 2014). An *l2*
 norm constraint is also applied to help further regularise the model.
 
 The original model made use of pre-trained Word2Vec word embeddings
@@ -556,7 +556,7 @@ evaluated against the test dataset.
     <td>0.3</td>
   </tr>
   <tr>
-    <td>$l2$ Regularisation</td>
+    <td>*l2* Regularisation</td>
     <td>3</td>
     <td>0.5</td>
   </tr>
@@ -579,7 +579,7 @@ the NDR corpus through hyperparameter tuning. A coarse grid search was
 performed on each of the following hyperparameters to find it's optimal
 values relating to the models classification performance; the kernel
 size of each feature region and the number of feature maps in the
-convolutional layer, the dropout rate and the $l2$ norm constraint
+convolutional layer, the dropout rate and the *l2* norm constraint
 threshold.
 
 The range of value sets used in the grid search were taken from a
@@ -602,7 +602,7 @@ dropout and softmax output layers, finding that the addition of a single
 fully connected feed forward layer improved model performance while
 reducing the number of epochs taken for the model to converge. A coarse
 grid search was conducted using different numbers of nodes
-$n \in \{ 50, 100, 250, 500, 1000 \}$ in the dense fully connected
+*n* є {50, 100, 250, 500, 1000} in the dense fully connected
 layer, finding 50 nodes to be optimal. Varying the number of
 convolutional layers in the model was also tested, as deeper
 architectures have been shown to be highly effective at text
@@ -614,7 +614,7 @@ The optimal hyperparameters identified for the tunned model are shown in
 Table 2. Once trained with these hyperparameters the tunned model
 yielded an average test accuracy of 86.3%, an improvement of 3.7%
 compared to the original model. The model also had an improved average
-macro $F1$ score of 0.86. Obviously given that this model has been
+macro *F1* score of 0.86. Obviously given that this model has been
 trained and evaluated against only documents which contained text data,
 when the evaluation metrics are extended to include all documents in the
 NDR corpus the text based approach has an average macro accuracy of
@@ -657,7 +657,7 @@ max pooling layers have 4 x 4 pooling kernels. The network is regulated
 by applying dropout at the penultimate layer at a rate of 0.5, this
 masks out the output activations from 50% of the neurons in the final
 dense layer. The model was tested with each dropout rate
-$r \in \{0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6\}$ with the optimal dropout
+*r* є {0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6} with the optimal dropout
 rate being 0.5 as per the original paper. The variation of other model
 hyperparameters was tested, however the only change made that improved
 the performance of the original model was the use of zero padding on the
@@ -669,7 +669,7 @@ tested with the majority vote being taken as a documents class, with the
 strength of the softmax probability prediction being used to resolve any
 conflicts. First the single page CNN model was trained on all ten pages
 from every document. The model was able to classify individual pages
-with an accuracy of 49% and $F1$ score of 0.48. During model evaluation,
+with an accuracy of 49% and *F1* score of 0.48. During model evaluation,
 inference was performed on all pages in a document using the majority
 vote method to give a final prediction for the document as a whole.
 Unfortunately this approach performed poorly with an accuracy of 50%,
@@ -688,7 +688,7 @@ single feature vector and used as input to a simple three layer neural
 network classifier. The classifier architecture consisted of a 60 node
 input layer, a hidden 10 node fully connected layer and a 6 node softmax
 output layer, with the number of nodes in the hidden layer being
-determined by a grid search of $n \in \{  5, 10, 15, 20, 30 \}$. When
+determined by a grid search of *n* є {5, 10, 15, 20, 30}. When
 evaluated this approach gave a classification accuracy score of 72.4% a
 major improvement of 22.4% compared to the majority vote method and a
 significant accuracy improvement of 5.3% over the Single Page CNN.
@@ -702,10 +702,10 @@ temporal CNN feature extraction layers is then fed into two
 uni-directional LSTM layers in place of the previous dense layers used
 in the Single Page CNN. The output of the final CNN layer is regulated
 using dropout prior to the final softmax output layer. The optimal
-number of nodes in the LSTM layer $n$ and dropout rate $d$ were
+number of nodes in the LSTM layer *n* and dropout rate *d* were
 determined using grid search for
-$n \in \{250, 400, 450, 500, 550, 600, 750, 1000\}$ and
-$d \in \{0.1, 0.2, 0.3, 0.4, 0.5\}$ with $n$ = 1000 and $d$ = 0.5 giving
+*n* є {250, 400, 450, 500, 550, 600, 750, 1000} and
+*d* є {0.1, 0.2, 0.3, 0.4, 0.5} with *n* = 1000 and *d* = 0.5 giving
 optimum model performance. The C-LSTM model performed significantly
 better than the Single Page CNN, showing an improvement of 6.5% average
 accuracy. How ever it performed worse than the Multi-Page CNN with the
@@ -824,9 +824,9 @@ carried out on the final LSTM and regularisation layers, making the
 assumption that the feature extraction layers have already been
 optimised for feature extraction on the input data during the tunning of
 the uni-modal models. A coarse grid search was performed on a per
-feature basis, exploring the number of nodes $n = \{250, 400, 450, 500, 550, 600, 750, 1000\}$ in each LSTM layer and
+feature basis, exploring the number of nodes *n* = {250, 400, 450, 500, 550, 600, 750, 1000} in each LSTM layer and
 the dropout rate applied to regulate the model at the penultimate layer
-$d = \{ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 \}$. This process identified 1000
+*d* = {0.1, 0.2, 0.3, 0.4, 0.5, 0.6}. This process identified 1000
 nodes and a dropout rate of 0.5 was optimal for the final LSTM layer,
 interestingly creating a bottleneck by using only 450 nodes in the first
 LSTM layer led to a reasonable increase in classification performance.
@@ -917,7 +917,7 @@ across the dataset and does not assume homogeneity of variance (Demšar,
 2006). This allows us to test the null hypothesis that the difference in
 performance between to models may be due to random chance, we can reject
 this hypothesis if the score is below the widely used threshold of
-0.05.\
+0.05.
 
 ::: tabular
 \| c \| c \| c c c c \| **Model** & **Seed** & **Accuracy** &
