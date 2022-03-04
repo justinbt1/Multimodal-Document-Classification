@@ -79,6 +79,8 @@ technical diagrams, seismic sections and wireline logs.
 
 ![Sample NDR Page Images](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/page_samples.png)
 
+Figure 1: Sample NDR Page Images
+
 Contemporary uni-modal document classification models used in the
 industry often rely on features from a single modality, either textual
 or visual. However, it is difficult to build a robust high performance
@@ -838,6 +840,8 @@ model is shown in Figure 2.
 
 ![Early Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/early_fusion_model.png)
 
+Figure 2: Early Fusion Model Architecture
+
 ## Late Fusion Model
 
 The late fusion method makes use of two separate uni-modal networks and
@@ -868,6 +872,8 @@ Figure 3.
 
 ![Late Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/late_fusion_model.png)
 
+Figure 3: Late Fusion Model Architecture
+
 ## Hybrid Fusion Model
 
 Hybrid fusion networks attempt to combine the benefits of the early and
@@ -880,6 +886,8 @@ The final high level architecture for the hybrid fusion model is shown
 in Figure 4.
 
 ![Hybrid Fusion Model Architecture](https://github.com/robert-drop-table/Multimodal-Document-Classification/blob/main/report/media/hybrid_fusion_model.png)
+
+Figure 4: Hybrid Fusion Model Architecture
 
 # Evaluation
 
