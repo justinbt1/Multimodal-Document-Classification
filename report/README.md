@@ -1187,236 +1187,236 @@ Table 5: Dual Modality Dataset Classifier Performance Benchmarks.
   <tr>
     <td rowspan=10>Early Fusion C-LSTM</td>
     <td>2020</td>
-    <td>79.6 %</td>
-    <td>0.83</td>
+    <td>79.2 %</td>
+    <td>0.81</td>
     <td>0.78</td>
     <td>0.79</td>
   </tr>
   <tr>
     <td>2021</td>
-    <td>80.7 %</td>
-    <td>0.82</td>
-    <td>0.81</td>
-    <td>0.81</td>
+    <td>77.8 %</td>
+    <td>0.80</td>
+    <td>0.78</td>
+    <td>0.78</td>
   </tr>
   <tr>
     <td>2022</td>
-    <td>84.4 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.84</td>
+    <td>77.9 %</td>
+    <td>0.80</td>
+    <td>0.78</td>
+    <td>0.78</td>
   </tr>
   <tr>
     <td>2023</td>
-    <td>85.6 %</td>
-    <td>0.86</td>
+    <td>74.3 %</td>
+    <td>0.78</td>
     <td>0.76</td>
-    <td>0.86</td>
+    <td>0.76</td>
   </tr>
   <tr>
     <td>2024</td>
-    <td>80.7 %</td>
-    <td>0.81</td>
-    <td>0.81</td>
-    <td>0.80</td>
+    <td>78.3 %</td>
+    <td>0.82</td>
+    <td>0.78</td>
+    <td>0.79</td>
   </tr>
   <tr>
     <td>2025</td>
-    <td>84.2 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.85</td>
+    <td>76.8 %</td>
+    <td>0.81</td>
+    <td>0.78</td>
+    <td>0.78</td>
   </tr>
   <tr>
     <td>2026</td>
-    <td>81.9 %</td>
-    <td>0.85</td>
+    <td>77.8 %</td>
     <td>0.81</td>
-    <td>0.82</td>
+    <td>0.78</td>
+    <td>0.78</td>
   </tr>
   <tr>
     <td>2027</td>
-    <td>83 %</td>
-    <td>0.80</td>
-    <td>0.79</td>
-    <td>0.79</td>
+    <td>75.9 %</td>
+    <td>0.78</td>
+    <td>0.76</td>
+    <td>0.77</td>
   </tr>
   <tr>
     <td>2028</td>
-    <td>84.5 %</td>
-    <td>0.85</td>
-    <td>0.84</td>
-    <td>0.84</td>
+    <td>78 %</td>
+    <td>0.80</td>
+    <td>0.78</td>
+    <td>0.79</td>
   </tr>
   <tr>
     <td>2029</td>
     <td>77.2 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.85</td>
+    <td>0.79</td>
+    <td>0.77</td>
+    <td>0.77</td>
   </tr>
   <tr>
     <td colspan=2><b>Average:</b></td>
-    <td><b>82.5 %</b></td>
-    <td><b>0.84</b></td>
-    <td><b>0.83</b></td>
-    <td><b>0.83</b></td>
+    <td><b>77.3 %</b></td>
+    <td><b>0.80</b></td>
+    <td><b>0.78</b></td>
+    <td><b>0.78</b></td>
   </tr>
   <tr>
     <td rowspan=10>Late Fusion C-LSTM</td>
     <td>2020</td>
-    <td>83.3 %</td>
+    <td>81.4 %</td>
+    <td>0.82</td>
     <td>0.83</td>
-    <td>0.83</td>
-    <td>0.83</td>
+    <td>0.82</td>
   </tr>
   <tr>
     <td>2021</td>
-    <td>80.7 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.85</td>
-  </tr>
-  <tr>
-    <td>2022</td>
-    <td>84.4 %</td>
-    <td>0.83</td>
-    <td>0.84</td>
-    <td>0.83</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>86.4 %</td>
-    <td>0.87</td>
-    <td>0.87</td>
-    <td>0.87</td>
-  </tr>
-  <tr>
-    <td>2024</td>
-    <td>85.5 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.85</td>
-  </tr>
-  <tr>
-    <td>2025</td>
-    <td>84.5 %</td>
-    <td>0.86</td>
-    <td>0.85</td>
-    <td>0.85</td>
-  </tr>
-  <tr>
-    <td>2026</td>
-    <td>83.6 %</td>
-    <td>0.85</td>
-    <td>0.84</td>
-    <td>0.84</td>
-  </tr>
-  <tr>
-    <td>2027</td>
-    <td>84.8 %</td>
-    <td>0.85</td>
-    <td>0.84</td>
-    <td>0.85</td>
-  </tr>
-  <tr>
-    <td>2028</td>
-    <td>84.2 %</td>
-    <td>0.85</td>
-    <td>0.85</td>
-    <td>0.85</td>
-  </tr>
-  <tr>
-    <td>2029</td>
-    <td>82.7 %</td>
-    <td>0.84</td>
-    <td>0.83</td>
-    <td>0.73</td>
-  </tr>
-  <tr>
-    <td colspan=2><b>Average:</b></td>
-    <td><b>82.5 %</b></td>
-    <td><b>0.85</b></td>
-    <td><b>0.85</b></td>
-    <td><b>0.85</b></td>
-  </tr>
-  <tr>
-    <td rowspan=10>Hybrid Fusion C-LSTM</td>
-    <td>2020</td>
-    <td>83.4 %</td>
-    <td>0.85</td>
-    <td>0.84</td>
-    <td>0.80</td>
-  </tr>
-  <tr>
-    <td>2021</td>
-    <td>83.3 %</td>
-    <td>0.85</td>
-    <td>0.84</td>
-    <td>0.77</td>
-  </tr>
-  <tr>
-    <td>2022</td>
-    <td>83.1 %</td>
-    <td>0.84</td>
-    <td>0.83</td>
-    <td>0.78</td>
-  </tr>
-  <tr>
-    <td>2023</td>
-    <td>81.7 %</td>
-    <td>0.83</td>
-    <td>0.82</td>
-    <td>0.75</td>
-  </tr>
-  <tr>
-    <td>2024</td>
-    <td>83.1 %</td>
-    <td>0.82</td>
+    <td>79.2 %</td>
     <td>0.81</td>
-    <td>0.78</td>
+    <td>0.83</td>
+    <td>0.79</td>
+  </tr>
+  <tr>
+    <td>2022</td>
+    <td>83 %</td>
+    <td>0.84</td>
+    <td>0.83</td>
+    <td>0.84</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>83 %</td>
+    <td>0.84</td>
+    <td>0.83</td>
+    <td>0.84</td>
+  </tr>
+  <tr>
+    <td>2024</td>
+    <td>81.9 %</td>
+    <td>0.82</td>
+    <td>0.83</td>
+    <td>0.82</td>
   </tr>
   <tr>
     <td>2025</td>
-    <td>85.4 %</td>
-    <td>0.85</td>
-    <td>0.86</td>
-    <td>0.79</td>
+    <td>80.7 %</td>
+    <td>0.82</td>
+    <td>0.83</td>
+    <td>0.81</td>
   </tr>
   <tr>
     <td>2026</td>
     <td>81.6 %</td>
-    <td>0.84</td>
     <td>0.81</td>
-    <td>0.81</td>
+    <td>0.83</td>
+    <td>0.82</td>
   </tr>
   <tr>
     <td>2027</td>
-    <td>81.3 %</td>
+    <td>81.7 %</td>
+    <td>0.78</td>
+    <td>0.84</td>
     <td>0.82</td>
-    <td>0.81</td>
-    <td>0.81</td>
   </tr>
   <tr>
     <td>2028</td>
-    <td>82.9 %</td>
-    <td>0.84</td>
-    <td>0.83</td>
-    <td>0.83</td>
+    <td>80.9 %</td>
+    <td>0.80</td>
+    <td>0.82</td>
+    <td>0.82</td>
   </tr>
   <tr>
     <td>2029</td>
-    <td>72.3 %</td>
-    <td>0.84</td>
-    <td>0.83</td>
-    <td>0.83</td>
+    <td>76.2 %</td>
+    <td>0.79</td>
+    <td>0.79</td>
+    <td>0.78</td>
   </tr>
   <tr>
     <td colspan=2><b>Average:</b></td>
-    <td><b>82.6 %</b></td>
-    <td><b>0.84</b></td>
-    <td><b>0.83</b></td>
-    <td><b>0.83</b></td>
+    <td><b>81 %</b></td>
+    <td><b>0.82</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.81</b></td>
+  </tr>
+  <tr>
+    <td rowspan=10>Hybrid Fusion C-LSTM</td>
+    <td>2020</td>
+    <td>80 %</td>
+    <td>0.83</td>
+    <td>0.79</td>
+    <td>0.80</td>
+  </tr>
+  <tr>
+    <td>2021</td>
+    <td>75.3 %</td>
+    <td>0.80</td>
+    <td>0.76</td>
+    <td>0.77</td>
+  </tr>
+  <tr>
+    <td>2022</td>
+    <td>77.2 %</td>
+    <td>0.80</td>
+    <td>0.77</td>
+    <td>0.78</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>73.7 %</td>
+    <td>0.80</td>
+    <td>0.74</td>
+    <td>0.75</td>
+  </tr>
+  <tr>
+    <td>2024</td>
+    <td>77.6 %</td>
+    <td>0.80</td>
+    <td>0.77</td>
+    <td>0.78</td>
+  </tr>
+  <tr>
+    <td>2025</td>
+    <td>78.6 %</td>
+    <td>0.80</td>
+    <td>0.79</td>
+    <td>0.79</td>
+  </tr>
+  <tr>
+    <td>2026</td>
+    <td>77.5 %</td>
+    <td>0.83</td>
+    <td>0.77</td>
+    <td>0.78</td>
+  </tr>
+  <tr>
+    <td>2027</td>
+    <td>78.5 %</td>
+    <td>0.82</td>
+    <td>0.79</td>
+    <td>0.79</td>
+  </tr>
+  <tr>
+    <td>2028</td>
+    <td>74.5 %</td>
+    <td>0.81</td>
+    <td>0.76</td>
+    <td>0.76</td>
+  </tr>
+  <tr>
+    <td>2029</td>
+    <td>79.2 %</td>
+    <td>0.82</td>
+    <td>0.79</td>
+    <td>0.80</td>
+  </tr>
+  <tr>
+    <td colspan=2><b>Average:</b></td>
+    <td><b>77.2 %</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.77</b></td>
+    <td><b>0.78</b></td>
   </tr>
 </table>
 
