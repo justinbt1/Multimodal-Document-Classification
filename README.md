@@ -8,7 +8,7 @@ classification of documents within the [Oil & Gas Authority](https://www.ogautho
 (OGA) [National Data Repository](https://ndr.ogauthority.co.uk/dp/controller/PLEASE_LOGIN_PAGE) (NDR) using deep multimodal fusion
 convolutional long short term memory (C-LSTM) neural networks. This readme gives a brief overview of the project and the code in 
 this repository, see the accompanying 
-[report](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/report/project_report.pdf) for the full 
+[report](https://github.com/justinbt1/Multimodal-Document-Classification/blob/main/report/) for the full 
 details. Note this is experimental code for my masters project, I would advise against running any of it in production.
 
 ### Requirements
