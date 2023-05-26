@@ -4,7 +4,7 @@
 
 ### Multimodal Visual & Text Based Approach to Multi-Page Document Classification.
 MSc project investigating multi-modal fusion approaches to combining textual and visual features for multi-page document 
-classification of documents within the [Oil & Gas Authority](https://www.ogauthority.co.uk/) 
+classification of documents within the [North Sea Transition Authority](https://www.ogauthority.co.uk/) 
 (OGA) [National Data Repository](https://ndr.ogauthority.co.uk/dp/controller/PLEASE_LOGIN_PAGE) (NDR) using deep multimodal fusion
 convolutional long short term memory (C-LSTM) neural networks. This readme gives a brief overview of the project and the code in 
 this repository, see the accompanying 
