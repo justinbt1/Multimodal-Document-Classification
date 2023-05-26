@@ -18,7 +18,7 @@ All Python dependencies for the project can be installed by building a conda env
 ### Document Dataset
 The data source used in this project was compiled from a corpus of raw documents uploaded by oil companies to the 
 [National Data Repository](https://ndr.ogauthority.co.uk/) (NDR), a data repository for 
-UK petroleum exploration and production data maintained by the [Oil & Gas Authority](https://www.ogauthority.co.uk/) 
+UK petroleum exploration and production data maintained by the [North Sea Transition Authority](https://www.ogauthority.co.uk/) 
 (OGA). The document corpus used consists of a sample of 6,541 documents, these are mostly PDF, Microsoft Office, text 
 and image type files.
 
