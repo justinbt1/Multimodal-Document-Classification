@@ -13,6 +13,21 @@ def text_cnn_model(
         optimizer='adam',
         loss='categorical_crossentropy'
 ):
+    """ Constructs text Classification Convolutional Neural Network.
+    Args:
+        doc_data: Object containing text data.
+        embedding_size(float): Size of text embeddings.
+        filter_maps(int): Number of filter maps for 1D CNN layer.
+        kernel_size(int): Kernel size for 1D CNN layer.
+        dropout_rate(float): Dropout rate for final dense fully connected classifier layer.
+        l2_regularization(float): Rate of l2 regularization.
+        dense_nodes(int): Number of nodes in each dense fully connected classifier layer.
+        dense_layers(int): Number of dense fully connected classifier layers.
+        optimizer(str): Optimization algorithm.
+        loss(str): Loss function.
+    Returns:
+        Text CNN model with defined architecture.
+    """
     input_layer = keras.layers.Input(shape=2000)
 
     embeddings = keras.layers.Embedding(
